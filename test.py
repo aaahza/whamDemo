@@ -5,7 +5,7 @@ def test_wham_analysis():
     wham_model = WHAM_API()
     
     # Set input video path
-    input_video_path = 'examples/clip.mov'
+    input_video_path = '../examples/clip.mov'
     
     # Process video
     try:
