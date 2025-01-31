@@ -1,5 +1,12 @@
-from wham_api import WHAM_API
+import os
+import sys
 
+# Add parent directory to Python path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
+
+from wham_api import WHAM_API
 def test_wham_analysis():
     # Initialize WHAM API
     wham_model = WHAM_API()
