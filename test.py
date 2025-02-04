@@ -12,8 +12,9 @@ def test_wham_analysis():
     wham_model = WHAM_API()
     
     # Set input video path
-    input_video_path = '../examples/1.mp4'
+    input_video_path = 'examples/1.mp4'
     
+    import ipdb; ipdb.set_trace()
     results, tracking_results, slam_results = wham_model(input_video_path)
 
     # Print types of the variables returned by WHAM model
