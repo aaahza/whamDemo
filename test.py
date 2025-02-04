@@ -12,10 +12,11 @@ def test_wham_analysis():
     wham_model = WHAM_API()
     
     # Set input video path
-    input_video_path = '../examples/clip.mov'
+    input_video_path = '../examples/1.mp4'
     
     # Process video
     try:
+        import ipdb; ipdb.set_trace()
         results, tracking_results, slam_results = wham_model(input_video_path)
         
         # Print results summary
